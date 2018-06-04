@@ -1,6 +1,6 @@
 namespace :seeder do
   desc 'Seeds all models'
-  task :seed_all, [:model] => :environment do |task, args|
+  task :seed, [:model] => :environment do |task, args|
     # defaulting to 10 entries if no value is provided
     entries = ENV['ENTRIES'].present? ? ENV['ENTRIES'].to_i : 10
 

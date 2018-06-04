@@ -22,7 +22,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Just run the following command to seed your database
+
+```ruby
+rails seeder:seed
+```
+
+This will iterate through your `models` classes and will create 10 objects with [random data](https://github.com/stympy/faker)
+
+You can specify the number of records you want to create or the specific models you want to seed with the `ENTRIES` and `MODELS` arguments. Example:
+
+```ruby
+rails seeder:seed MODELS=user,company,project ENTRIES=30
+```
 
 ## Development
 
